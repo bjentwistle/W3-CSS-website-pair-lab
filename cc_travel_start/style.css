@@ -206,6 +206,10 @@ img {
   background-color: rgb(39, 38, 72);
   justify-content: center;
 }
+.testimonial-area >p{
+  background-color: white;
+  justify-content: center;
+}
 
 .author-thumb > img {
   display: block;
@@ -215,16 +219,16 @@ img {
   background-color: white;
 }
 .row > div > p {
-/* background-color: #fff; */
+background-color: #fff;
 
 }
 .single-testmonial > div {
   justify-content: center;
   background-color: white;
 }
-.single-testmonial > div > p{
-  /* justify-content: center;
-  background-color: white; */
+.single-testmonial > div >p{
+  justify-content: center;
+  background-color: white;
 }
 
 .single-destination p {
