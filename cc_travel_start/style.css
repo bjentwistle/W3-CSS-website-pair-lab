@@ -40,7 +40,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap:1rem;
   list-style:none;
   align-items: center;
@@ -51,11 +51,10 @@ nav ul {
 li > a {
   color: white;
   font-size: larger;
-  /* padding:16px; */
   text-decoration: none;
   align-items: center;
   margin-right: auto;
-  /* list-style:  none; */
+
 }
 /* Now it's time for the navigation links */
 /* Create a CSS block that targets all of the <li> elements that are children of the <nav> element */
@@ -67,20 +66,22 @@ li > a {
   - margin-right
 */
 
+
+/* Create a block that targets all of the <a> elements that are children of <li> elements in the <nav>  */
+/* Give them a color of #fff and text-decoration of none */
 nav>ul>li>a {
   display: block;
   color: #fff;
   text-decoration: none;
+  margin: right;
 }
-/* Create a block that targets all of the <a> elements that are children of <li> elements in the <nav>  */
-/* Give them a color of #fff and text-decoration of none */
+/* Create another block that targets all of the <a> elements that are children of <li> elements in the <nav>  */
+/* Use the :hover pseudo-class to add an underline on hover */
 
 nav>ul>li>a:hover {
   text-decoration: underline;
 }
 
-/* Create another block that targets all of the <a> elements that are children of <li> elements in the <nav>  */
-/* Use the :hover pseudo-class to add an underline on hover */
 
 
 .where-togo {
@@ -178,15 +179,16 @@ They are notoriously difficult to style with css
   /* Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
 }
 
-.section-title {
+.section-title > h3{
   /* The <div> with class section-title contains an <h3> child which we want to center */
   /* The easiest way to center child elements is to set the display property to 'flex' and justify the content */
+  display: flex;
+  justify-content: center;
 }
 
 .single-destination {
   margin: 8px;
   overflow: hidden;
-  border-radius: 8px;
   /* Use the margin property to make some space between the destinations */
   /* Set the overflow to 'hidden' */
   /* The overflow CSS shorthand property sets the desired behaviour for an element's overflow 
@@ -202,31 +204,52 @@ img {
 
 .testimonial-area {
   background-color: rgb(39, 38, 72);
-  /* Write your code here */
+  justify-content: center;
 }
 
-.single-testmonial{
-  /* Write your code here */
+.author-thumb > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: white;
+}
+.row > div > p {
+/* background-color: #fff; */
+
+}
+.single-testmonial > div {
+  justify-content: center;
+  background-color: white;
+}
+.single-testmonial > div > p{
+  /* justify-content: center;
+  background-color: white; */
 }
 
+.single-destination p {
+  background-color: white;
+}
 .footer {
   /* Write your code here */
-}
-
-.footer-widget p {
-  /* Write your code here */
+  background-color: #040E27;
+  color: #fff;
 }
 
 .footer-widget a:hover {
    /* Write your code here */
+  text-decoration: underline;
 }
 
 .footer-widget ul li {
   /* Write your code here */
+  list-style-type: circle white;
+  
 }
 
 .footer-widget a {
-   /* Write your code here */
+  /* Write your code here */
+  color: white;
 }
 
 /* Media Queries */
